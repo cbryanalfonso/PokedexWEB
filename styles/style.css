@@ -1,0 +1,239 @@
+/***** HEADER ******/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&family=Outfit:wght@200;400;600&display=swap&family=Be+Vietnam+Pro:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Festive&family=Syne+Tactile&display=swap');
+*{
+    margin: 0px;
+}
+
+:root {
+    /* Fuentes */
+    --fuente-titulo:  'Karla', sans-serif;
+    --funte-titulo-bold: 'Karla', sans-serif;
+    --fuente-principal:  'Karla', sans-serif;
+
+    /* Tamaño */
+    --delgada: 200;
+    --regular : 400;
+    --grande: 600;
+
+    /* Colores */
+    --azul: #2448da;
+    --azul-fuerte: #1f3e72;
+    --celeste: #e7f3fc;
+    --gris: #697383;
+    --blanco: #ffffff;
+    --amarillo: #ffbb00;
+    
+}
+/****Icono pokemons */
+
+.contenedor{
+    width: min(80%, 120rem);
+    margin: 0 auto;
+}
+.header {
+  background: #F5DB13;/* #F2B807; */
+   /* background: linear-gradient(
+    90deg,
+    '#F5DB13'
+    /* rgba(255, 255, 255, 0) 50%, */
+   /*  rgb(222, 240, 255) 55%
+  );  */ 
+  padding: 1rem;
+}
+
+.barra {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo p {
+  font-weight: var(--grande);
+  font-size: 3rem;
+  color: var(--azul);
+}
+
+.navegacion {
+  display: flex;
+  gap: 4rem;
+  margin-right: 10px;
+}
+
+.navegacion a {
+  color: var(--gris);
+  font-size: 1.8rem;
+}
+
+/*** Fondo pantalla ***/
+
+.fondo{
+    background-color: white;
+    background:  linear-gradient(
+        90deg
+        #F5DB13 50%
+        #F2B807 50%
+    );
+    height: 300px;
+}
+.boton-nav a{
+    background-color: #73D677;
+    padding: 1rem 2rem 1rem 2rem;
+    border-radius: .5rem;
+    color: var(--blanco);
+    box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.22);
+    -webkit-box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.22);
+    -moz-box-shadow: 3px 2px 5px 0px rgba(0,0,0,0.22);
+}
+
+.marTop {
+    margin-top: 4rem;
+}
+
+
+
+
+/*==================================
+                CABECERA
+====================================*/
+
+.cabecera{
+    position: relative;
+    display: grid;    
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+   /*  background-color:#F5DB13 ; */
+   /*  background:  linear-gradient(
+        90deg
+        #F5DB13 50%
+        #F2B807 50%
+    ); */
+    
+}
+.colorFondo{
+    
+    background: linear-gradient(180deg, #F5DB13 70%, #F2B807 10%, #F3C80D 20%);
+}
+
+.cb-1{
+        padding-left: 7rem;
+        /* background-image: url(recursos/triangulos.jpg);
+         */background-blend-mode: soft-light;
+        height: 34rem;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: left center;
+
+}
+
+.cb-1 h1{
+    color: black;
+    font-weight: var(--regular);
+    font-family: var(--funte-titulo-bold);
+    text-transform: initial;
+    font-size: 5rem;
+    width: 90%;
+    text-align: left;
+}
+
+.cb-1 p{
+    color: var(--gris);
+    font-size: 2rem;
+}
+
+.cb-2{
+    background-image: url(../assets/logo/pikachu-modified.png);
+    background-blend-mode: soft-light;
+    height: 33rem;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+/* ==============================
+=           Pokemones           =
+=================================*/
+.contenedorBarraSuperior{
+    height: 30px;
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
+   
+}
+.contenedorBarraSuperiorBold{
+    text-align: center;
+    font-family: var(--fuente-principal);
+    font-weight: bold;
+    font-size: 2rem;
+}
+.normal{
+    text-align: center;
+    font-family: var(--fuente-principal);
+    font-size: 2rem;
+}
+.divWidth{
+    width: 100%;
+   
+    padding: 1rem;
+}
+.inputStyle{
+    width: 70%;
+    height: 50px;
+    border-radius: 20px;
+    padding-left: 30px;
+}
+.centrar{
+    display: flex;
+    justify-content: center;
+}
+.marginTOPPP{
+    margin-top: 10rem;
+}
+/*** MENU ***/
+.pasteles{
+    margin-left: 10px;
+    width: 210px;
+    height: 220px;
+    position: relative;
+    border-radius: 5%;
+    box-shadow: 0 0 5px #222;
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+    
+  }
+  .menu{
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 10px;
+   
+  }
+  .img{
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+  }
+  .txt{
+    font-size: 16px;
+    position: absolute;
+    margin-top: 160px;
+    font-weight: 700;
+  }
+  .precio{
+    font-size: 16px;
+    position: absolute;
+    margin-top: 180px;
+    font-weight: bold;
+    background-color: yellowgreen;
+    padding: 10px;
+    border-radius: 30%;
+  }
+  .btn{
+    display: flex;
+    justify-content: center;
+    
+  }
