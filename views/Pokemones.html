@@ -1,49 +1,72 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <title>Page Title</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='../styles/style.css'>
-    <script src='main.js'></script>
-</head>
-<body>
-    <header class="header">
-        <div class="barra contenedor">
-          <div class="logo">
-           <img src="../assets/logo/pokeLogo-modified.png" style="width: 200px;" />
-          </div>
-          <nav class="navegacion">
-             
-            <a href="#">Home</a>
-            <a href="#">Pokedex</a>
-            <a href="#">Legendaries</a>
-            <a href="#">Documentation</a>
-            
-          </nav>
-        </div>
-      </header>
-      <section class="contenedorBarraSuperior">
-          <div class="divWidth">
-              <p class="contenedorBarraSuperiorBold">800 Pokemons for you to choose your favorite</p>
-          </div>
-          <br><br>
-          <div class="divWidth centrar">
-            <input type="text" id="inputSearch" class="inputStyle" placeholder="Search your favorite Pokemon"  />
-          </div>
-      </section>
-      <section class="contenedorBarraSuperior marginTOPPP">
-        <div class="menu">
-          <div class="pasteles">
-              <img src="../assets/pasteles/3leches.jpg" alt="Pastel de tres leches" class="img">
-              <div class="txt">Pokemon</div>
-              <div class="precio">$500</div>
-
-          </div>
-          
-  </div>
-      </section>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="../styles/style.css"
+    />
     
-</body>
+  </head>
+  <body>
+    <header class="header">
+      <div class="barra contenedor">
+        <div class="logo">
+          <img
+            src="../assets/logo/pokeLogo-modified.png"
+            style="width: 200px"
+          />
+        </div>
+        <nav class="navegacion">
+          <a href="#">Home</a>
+          <a href="#">Pokedex</a>
+          <a href="#">Legendaries</a>
+          <a href="#">Documentation</a>
+        </nav>
+      </div>
+    </header>
+    <section class="contenedorBarraSuperior">
+      <div class="divWidth">
+        <p class="contenedorBarraSuperiorBold">
+          800 Pokemons for you to choose your favorite
+        </p>
+      </div>
+      <br /><br />
+      <div class="divWidth centrar">
+        <input
+          type="text"
+          id="inputSearch"
+          class="inputStyle"
+          placeholder="Search your favorite Pokemon"
+        />
+        <button onclick="fetchPokemon()">Change Pokemon</button>
+      </div>
+    </section>
+
+    <section class="contenedorBarraSuperior marginTOPPP">
+      <div class="menu">
+        <div class="pasteles">
+          <div style="width: 40%; background-color: pink;">
+            <p id="nombrePoke" style="color: black;">Pokemon</p>
+          </div>
+          <div style="width: 60%; background-color: green;">
+            <img
+            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+            alt="Pastel de tres leches"
+            class="img"
+            id="pokeImg"
+          />
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+  <footer>
+    <script src="../js/main.js"></script>
+  </footer>
 </html>
