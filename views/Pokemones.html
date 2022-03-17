@@ -11,7 +11,6 @@
       media="screen"
       href="../styles/style.css"
     />
-    
   </head>
   <body>
     <header class="header">
@@ -51,16 +50,59 @@
     <section class="contenedorBarraSuperior marginTOPPP">
       <div class="menu">
         <div class="pasteles">
-          <div style="width: 40%; background-color: pink;">
-            <p id="nombrePoke" style="color: black;">Pokemon</p>
+          <div style="width: 40%;">
+            <p
+              id="nombrePoke"
+              style="
+                color: black;
+                font-weight: bold;
+                font-size: 40;
+                text-align: center;
+                padding-top: 1rem;
+              "
+            >
+              Pokemon
+            </p>
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-top: 1rem;
+              "
+            >
+              <div class="circulo" id="att"></div>
+              <div class="circulo" id="def"></div>
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-top: 1rem;
+              "
+            >
+              <div>Attack</div>
+              <div>Defense</div>
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                justify-content: space-around;
+                margin-top: 1rem;
+              "
+            >
+              <div id="tipo" class="tipoPokeButton"></div>
+            </div>
           </div>
-          <div style="width: 60%; background-color: green;">
+          <div style="width: 60%;">
             <img
-            src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
-            alt="Pastel de tres leches"
-            class="img"
-            id="pokeImg"
-          />
+              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+              alt="Pastel de tres leches"
+              class="img"
+              id="pokeImg"
+            />
           </div>
         </div>
       </div>
