@@ -50,59 +50,62 @@
     <section class="contenedorBarraSuperior marginTOPPP">
       <div class="menu">
         <div class="pasteles">
-          <div style="width: 40%;">
-            <p
-              id="nombrePoke"
-              style="
-                color: black;
-                font-weight: bold;
-                font-size: 40;
-                text-align: center;
-                padding-top: 1rem;
-              "
-            >
-              Pokemon
-            </p>
-            <div
-              style="
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                margin-top: 1rem;
-              "
-            >
-              <div class="circulo" id="att"></div>
-              <div class="circulo" id="def"></div>
+          <div style="width: 40%">
+            <p id="nombrePoke" class="centrarTextoPokemon">Pokemon</p>
+            <div class="centerDivFlex">
+              <div class="circulo" id="att">0</div>
+              <div class="circulo" id="def">0</div>
             </div>
-            <div
-              style="
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                margin-top: 1rem;
-              "
-            >
+            <div class="centerDivFlex">
               <div>Attack</div>
               <div>Defense</div>
             </div>
-            <div
-              style="
-                display: flex;
-                flex-direction: row;
-                justify-content: space-around;
-                margin-top: 1rem;
-              "
-            >
-              <div id="tipo" class="tipoPokeButton"></div>
+            <div class="centerDivFlex">
+              <div id="tipo" class="tipoPokeButton">Tipo pokemon</div>
+            </div>
+
+            <div class="centerDivFlex">
+              <!--  <a href="#openModal">Lanzar el modal</a> -->
+
+              <div id="openModal" class="modalDialog">
+                <div>
+                  <a href="#close" title="Close" class="close">X</a>
+                  <div style="display: flex; flex-direction: row">
+                    <div class="alinearModalImg colorPokemon">
+                      <img
+                        src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+                        alt="Pastel de tres leches"
+                        class="img"
+                        id="pokeImgModal"
+                      />
+                    </div>
+                    <div class="alinearModalData" style="background: #732119;">
+                      <div id="nombrePoke" class="centrarTextoPokemonModal">Pokemon</div>
+                      <div class="abilitiesModal">
+                        <h4>Abilities</h4>
+                        <p id="abilityPoke"></p>
+                      </div>
+                      <div class="abilitiesModal">
+                        <h4>Moves</h4>
+                        <p id="movePoke"></p>
+                      </div>
+                      
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
-          <div style="width: 60%;">
-            <img
-              src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
-              alt="Pastel de tres leches"
-              class="img"
-              id="pokeImg"
-            />
+          <div style="width: 60%">
+            <a href="#openModal">
+              <img
+                src="https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/25.png"
+                alt="Pastel de tres leches"
+                class="img"
+                id="pokeImg"
+              />
+            </a>
           </div>
         </div>
       </div>
